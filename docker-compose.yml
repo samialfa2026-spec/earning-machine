@@ -14,16 +14,8 @@ services:
                 ipv4_address: 172.106.0.10
     #end of EarnApp Configuration
 
-    #HoneyGain Configuration
-    honeygain:
-        container_name: honeygain
-        image: honeygain/honeygain
-        command: -tou-accept -email 'YOUR_HONEYGAIN_EMAIL_ADDRESS' -pass 'YOUR_USER_HONEYGAIN_PASSWORD' -device EarningMachine
-        restart: always
-        networks:
-            default:
-                ipv4_address: 172.106.0.20
-    #end of HoneyGain Configuration
+    
+
 
     #Peer2Profit Configuration
     peer2profit:
